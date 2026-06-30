@@ -1,0 +1,65 @@
+---
+title: "Designing a Digital Reading Room"
+description: "A gentle framework for building a blog that feels calm, warm, and worth returning to."
+slug: "digital-reading-room"
+cover: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80"
+author: "Sandra Puspita Sari"
+category: "Design"
+tags: ["reading", "typography", "interface"]
+publishedAt: "2026-06-20"
+updatedAt: "2026-06-24"
+featured: true
+draft: false
+---
+
+## The Room Comes First
+
+A good personal blog does not need to behave like a news feed. It can feel more like a room: a place with a chair, a desk, a warm light, and enough silence for a paragraph to land.
+
+<Callout type="idea">
+The goal is not to make the interface disappear. The goal is to make the interface behave like a considerate host.
+</Callout>
+
+## Typography Sets the Pace
+
+Typography is the rhythm of reading. If the line length is too wide, the eyes get tired. If the line height is too tight, the page feels anxious.
+
+For long-form reading, I like this simple rule:
+
+| Element | Comfortable Range |
+| --- | --- |
+| Reading width | 700-760px |
+| Body size | 18-20px |
+| Line height | 1.75-1.95 |
+
+## Motion Should Whisper
+
+Animation helps when it explains movement or gives the page a softer sense of life. It becomes noise when every element wants attention.
+
+```tsx
+export function GentleReveal({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+## A Tiny Equation for Calm
+
+Sometimes the best design decision can be written like this:
+
+$$clarity = spacing + contrast + restraint$$
+
+<PullQuote>
+Make the page quiet enough that the writing can become loud.
+</PullQuote>
+
+## What Readers Remember
+
+Readers remember how a site made them feel. A warm archive says: stay a little longer, this thought is worth your time.

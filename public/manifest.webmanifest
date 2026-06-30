@@ -1,0 +1,16 @@
+{
+  "name": "SandraJourney",
+  "short_name": "SandraJourney",
+  "description": "A calm personal blog for essays, tutorials, notes, and stories.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#8B5E3C",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
