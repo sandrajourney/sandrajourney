@@ -11,7 +11,7 @@ export function RandomQuote() {
   return (
     <section className="border-y border-border py-14 text-center">
       <p className="mx-auto max-w-3xl font-serif text-3xl leading-snug sm:text-4xl">
-        "{quote}"
+        {quote}
       </p>
     </section>
   );
