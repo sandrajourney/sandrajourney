@@ -117,8 +117,8 @@ export default function AboutPage() {
       <section className="mt-12 rounded-lg border border-border bg-card p-8">
         <Quote className="text-accent" size={26} />
         <p className="mt-5 font-serif text-3xl leading-snug">
-          "Learning is easier when your notes become a place you actually want
-          to return to."
+          {'Learning is easier when your notes become a place you actually want
+          to return to.'}
         </p>
       </section>
     </div>
